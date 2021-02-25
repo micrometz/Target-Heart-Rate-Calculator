@@ -1,15 +1,15 @@
 #include <iostream>
 #include <string>
 #include <sstream>
-#include "HeartRates.h"
+#include "E:\ECE330\homework 3\HeartRates.h"
 using namespace std;
-template <typename T>
 
+template <typename T>
 std::string toString(T val)
 {
-   std::ostringstream ostring;
-   ostring << val;
-   return ostring.str();
+   std::ostringstream oss;
+   oss << val;
+   return oss.str();
 }
 
 HeartRates::HeartRates ( string fname, string lname, int mm, int dd, int yy )
